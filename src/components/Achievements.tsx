@@ -33,9 +33,9 @@ const Achievements: React.FC = () => {
                   </div>
                   
                   <div>
-                    <h3 className="text-xl font-bold text-soft-white mb-2">{achievement.title}</h3>
-                    <p className="text-soft-white/80 mb-3">{achievement.description}</p>
-                    <span className="text-highlight text-sm">{achievement.date}</span>
+                      <h3 className=" text-xl font-bold text-red-500 mb-2"></h3>
+                      <p className="text-accent/80 mb-3">{achievement.description}</p>
+                      <span className="text-accent text-sm">{achievement.date}</span>
                   </div>
                 </div>
               </div>

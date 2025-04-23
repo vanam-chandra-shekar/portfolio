@@ -3,109 +3,109 @@ import { Project, Certificate, Achievement, SocialLink } from '../types';
 export const projects: Project[] = [
   {
     id: 1,
-    title: "E-Commerce Platform",
-    description: "A full-stack e-commerce application with product catalog, shopping cart, user authentication, and payment integration.",
-    image: "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    technologies: ["React", "Node.js", "MongoDB", "Express", "Redux", "Stripe"],
+    title: "Expression Evalulator",
+    description: "Developed a command-line calculator application in C++ that efficiently interprets and executes mathematical expressions, supporting basic arithmetic operations, trigonometric functions, and mathematical constants through a custom parser and virtual machine.",
+    image: "src\\assets\\projects\\cal.png",
+    technologies: ["C", "C++", "Make", "Parsing", "Recursive desent"],
     liveUrl: "https://example.com/project1",
-    githubUrl: "https://github.com/username/project1"
+    githubUrl: "https://github.com/vanam-chandra-shekar/expr"
   },
   {
     id: 2,
-    title: "Task Management App",
-    description: "A collaborative task management application with real-time updates, task assignment, and progress tracking.",
-    image: "https://images.pexels.com/photos/6956463/pexels-photo-6956463.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    technologies: ["React", "Firebase", "Tailwind CSS", "TypeScript"],
+    title: "Tcp-chat-server",
+    description: "Implemented a client-server application using C++ and Winsock API to facilitate TCP/IP communication. The project includes a client that connects to a server, sends messages, and receives responses, demonstrating proficiency in network programming and socket management.",
+    image: "src\\assets\\projects\\tcp.png",
+    technologies: ["C", "C++", "Socket Programming"],
     liveUrl: "https://example.com/project2",
-    githubUrl: "https://github.com/username/project2"
+    githubUrl: "https://github.com/vanam-chandra-shekar/Tcp-chat-server"
   },
   {
     id: 3,
-    title: "AI Content Generator",
-    description: "An AI-powered application that generates content based on user prompts using OpenAI's GPT model.",
-    image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    technologies: ["Next.js", "OpenAI API", "Vercel", "Tailwind CSS"],
-    liveUrl: "https://example.com/project3",
-    githubUrl: "https://github.com/username/project3"
+    title: "Url shortner",
+    description: "Engineered a URL shortening service using Go, Docker, and Jenkins, featuring a microservices architecture with PostgreSQL for data storage. The project includes automated CI/CD pipelines for building, testing, and deploying the application, showcasing expertise in containerization, orchestration, and continuous integration practices.",
+    image: "src\\assets\\projects\\short.png",
+    technologies: ["Go", "Docker", "PostgreSQL", "Jenkins", "Microservices"],
+    liveUrl: "https://github.com/vanam-chandra-shekar/shortUrl.git",
+    githubUrl: "https://github.com/vanam-chandra-shekar/shortUrl.git"
   },
   {
     id: 4,
-    title: "Weather Dashboard",
-    description: "A weather application that provides current weather data and forecasts for locations worldwide.",
-    image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    technologies: ["React", "Weather API", "Chart.js", "Styled Components"],
-    liveUrl: "https://example.com/project4",
-    githubUrl: "https://github.com/username/project4"
+    title: "Mlpkg",
+    description: "Created a Python machine learning library from scratch, named mlpkg, featuring a custom automatic differentiation engine for constructing and visualizing computational graphs. The project highlights expertise in Python programming and foundational machine learning principles, emphasizing the development of reusable and efficient code for gradient-based optimization tasks.",
+    image: "src\\assets\\projects\\mlpkg.png",
+    technologies: ["Python", "Machine Learning", "NumPy", "Auto Diff", "Matplotlib"],
+    liveUrl: "https://github.com/vanam-chandra-shekar/MLpkg.git",
+    githubUrl: "https://github.com/vanam-chandra-shekar/MLpkg.git"
   }
 ];
 
 export const certificates: Certificate[] = [
   {
     id: 1,
-    name: "AWS Certified Solutions Architect",
-    issuer: "Amazon Web Services",
-    date: "June 2023",
-    credentialId: "AWS-12345",
-    url: "https://aws.amazon.com/certification/",
-    image: "https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    name: "Data Structures and Algorithms",
+    issuer: "Programming Pathshala",
+    date: "September 2024",
+    credentialId: "DSA",
+    url: "https://certificates.programmingpathshala.com/docs/8478419de7cd008f1cb1b82be21654f68f56afbebc87d6643629a43b7c6cd1c2",
+    image: "src\\assets\\certs\\dsa.png"
   },
   {
     id: 2,
-    name: "Full Stack Web Development",
-    issuer: "Udacity",
-    date: "March 2023",
-    credentialId: "UD-67890",
-    url: "https://www.udacity.com/",
-    image: "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    name: "MondoDb Introduction for Students",
+    issuer: "MongoDb",
+    date: "December 2024",
+    credentialId: "MongoDb-student",
+    url: "",
+    image: "src\\assets\\certs\\mongodb.png"
   },
   {
     id: 3,
-    name: "React Native Specialization",
-    issuer: "Coursera",
-    date: "December 2022",
-    credentialId: "CS-13579",
+    name: "Software engineering and DevOps",
+    issuer: "Coursera | IBM",
+    date: "December 2024",
+    credentialId: "CICD",
     url: "https://www.coursera.org/",
-    image: "https://images.pexels.com/photos/4974920/pexels-photo-4974920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    image: "src\\assets\\certs\\devops.png"
   },
   {
     id: 4,
-    name: "Machine Learning Engineer",
-    issuer: "DataCamp",
-    date: "October 2022",
+    name: "Linear Algebra for Machine Learning",
+    issuer: "Coursera",
+    date: "April 2025",
     credentialId: "DC-24680",
     url: "https://www.datacamp.com/",
-    image: "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    image: "src\\assets\\certs\\linaeral.png"
   }
 ];
 
 export const achievements: Achievement[] = [
   {
     id: 1,
-    title: "Hackathon Winner",
-    description: "First place at the International Developers Hackathon for creating an innovative healthcare solution.",
-    date: "May 2023",
-    image: "https://images.pexels.com/photos/7103/writing-notes-idea-conference.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    title: "Top 10% in University",
+    description: "Achieved recognition in the top 10% of my university cohort for academic excellence, demonstrating strong problem-solving abilities, dedication, and consistent performance across diverse disciplines.",
+    date: "Since 2024",
+    image: "src\\assets\\achivements\\top10.png"
   },
   {
     id: 2,
-    title: "Open Source Contributor",
-    description: "Significant contributions to several open-source projects, with over 500 commits and 20 pull requests merged.",
-    date: "2022 - Present",
-    image: "https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    title: "50 Days Leet code",
+    description: "Earned the prestigious 50-Day Badge on LeetCode in 2024, consistently solving challenges and ranking among the top 6% of coders worldwide.",
+    date: "2024",
+    image: "src\\assets\\achivements\\leet.png"
   },
   {
     id: 3,
-    title: "Tech Conference Speaker",
-    description: "Presented on 'Modern Frontend Architecture' at the Web Development Summit.",
-    date: "November 2022",
-    image: "https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    title: "Leet Code",
+    description: "Solved 99 coding problems on LeetCode, enhancing data structures and algorithm skills.",
+    date: "January 2025",
+    image: "src\\assets\\achivements\\leet99.png"
   },
   {
     id: 4,
-    title: "Published Article",
-    description: "Featured article in Tech Magazine about best practices in progressive web applications.",
-    date: "August 2022",
-    image: "https://images.pexels.com/photos/261763/pexels-photo-261763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    title: "Volunteer Internship - Bhumi NGO (Ignite Shelters Program)",
+    description: "Completed a 44-hour volunteer internship with Bhumi NGO, contributing to the Kanini project under the Ignite Shelters Program.",
+    date: "2024",
+    image: "src\\assets\\achivements\\bhumi.png"
   }
 ];
 
@@ -113,35 +113,35 @@ export const socialLinks: SocialLink[] = [
   {
     id: 1,
     platform: "GitHub",
-    url: "https://github.com/username",
+    url: "https://github.com/vanam-chandra-shekar",
     icon: "Github"
   },
   {
     id: 2,
     platform: "LinkedIn",
-    url: "https://linkedin.com/in/username",
+    url: "https://linkedin.com/in/vanamchandrashekar",
     icon: "Linkedin"
   },
   {
     id: 3,
     platform: "Twitter",
-    url: "https://twitter.com/username",
+    url: "https://twitter.com/vanamchandra23",
     icon: "Twitter"
   },
   {
     id: 4,
     platform: "Email",
-    url: "mailto:email@example.com",
+    url: "mailto:vanamchandrashekar@outlook.com",
     icon: "Mail"
   }
 ];
 
 export const aboutMe = {
-  name: "John Doe",
-  title: "Full Stack Developer",
-  introduction: "I'm a passionate full-stack developer specializing in building exceptional digital experiences. With a focus on creating responsive, user-friendly applications, I strive to write clean, efficient code and continuously improve my skills.",
-  details: "With over 5 years of experience in web development, I've worked on a variety of projects from e-commerce platforms to data visualization dashboards. I'm proficient in modern JavaScript frameworks like React and Vue, as well as backend technologies including Node.js and Python. I enjoy solving complex problems and learning new technologies.",
-  profileImage: "https://images.pexels.com/photos/5792641/pexels-photo-5792641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  name: "Chandra Shekar",
+  title: "Software Developer | Machine Learning Developer",
+  introduction: "I'm a passionate software and machine learning developer focused on building smart, scalable solutions. I love turning complex problems into clean, efficient code.",
+  details: "I'm a passionate student developer exploring software and machine learning. I enjoy building projects and learning by solving real-world problems with code.",
+  profileImage: "src\\assets\\profile.png",
   skills: [
     "JavaScript/TypeScript", 
     "React/Next.js", 

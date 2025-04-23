@@ -62,11 +62,11 @@ const Contact: React.FC = () => {
             <div className="space-y-4 mb-8">
               <div>
                 <h4 className="text-highlight font-medium mb-2">Email</h4>
-                <p className="text-soft-white">email@example.com</p>
+                <p className="text-soft-white">vanamchandrashekar@outlook.com</p>
               </div>
               <div>
                 <h4 className="text-highlight font-medium mb-2">Based in</h4>
-                <p className="text-soft-white">San Francisco, CA</p>
+                <p className="text-soft-white">Hyderabad, India</p>
               </div>
             </div>
             

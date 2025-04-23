@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
             </span>
             
             <h1 className="text-4xl md:text-6xl font-bold text-soft-white mb-6 leading-tight">
-              Hi, I'm <span className="text-accent">{aboutMe.name.split(' ')[0]}</span>
+              Hi, I'm <span className="text-accent">{aboutMe.name}</span>
               <br />
               <span className="text-highlight">I build things for the web</span>
             </h1>
@@ -71,18 +71,18 @@ const Hero: React.FC = () => {
         </div>
         
         <div className="mt-20 flex flex-wrap gap-8 justify-center animate-slide-up">
-          <div className="text-center">
+          {/* <div className="text-center">
             <h3 className="text-accent font-bold text-3xl mb-1">5+</h3>
             <p className="text-soft-white/70">Years Experience</p>
-          </div>
-          <div className="text-center">
+          </div> */}
+          {/* <div className="text-center">
             <h3 className="text-accent font-bold text-3xl mb-1">20+</h3>
             <p className="text-soft-white/70">Projects Completed</p>
-          </div>
-          <div className="text-center">
+          </div> */}
+          {/* <div className="text-center">
             <h3 className="text-accent font-bold text-3xl mb-1">10+</h3>
             <p className="text-soft-white/70">Satisfied Clients</p>
-          </div>
+          </div> */}
         </div>
       </div>
       
