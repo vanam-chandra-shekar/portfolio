@@ -16,8 +16,20 @@ const Hero: React.FC = () => {
       <div className="absolute bottom-1/4 left-1/4 w-64 h-64 bg-secondary/20 rounded-full blur-3xl"></div>
       
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-4xl mx-auto">
-          <div className="animate-fade-in">
+        <div className="flex flex-col md:flex-row md:items-center gap-12 max-w-5xl mx-auto">
+          {/* Profile Image */}
+          <div className="flex-shrink-0 mx-auto md:mx-0 order-1 md:order-none animate-fade-in">
+            <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-highlight/30 shadow-xl shadow-primary/20">
+              <img 
+                src={aboutMe.profileImage}
+                alt={aboutMe.name}
+                className="w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 rounded-full ring-4 ring-accent/20 shadow-inner"></div>
+            </div>
+          </div>
+          
+          <div className="flex-1 animate-fade-in text-center md:text-left">
             <span className="inline-block text-highlight mb-2 px-3 py-1 rounded-full bg-primary/20 text-sm font-medium">
               {aboutMe.title}
             </span>
@@ -32,7 +44,7 @@ const Hero: React.FC = () => {
               {aboutMe.introduction}
             </p>
             
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
               <button 
                 onClick={() => navigate('/projects')}
                 className="px-6 py-3 bg-secondary hover:bg-highlight transition-colors rounded-md text-soft-white font-medium flex items-center gap-2"
@@ -56,20 +68,20 @@ const Hero: React.FC = () => {
               </a>
             </div>
           </div>
-          
-          <div className="mt-20 flex flex-wrap gap-8 justify-center animate-slide-up">
-            <div className="text-center">
-              <h3 className="text-accent font-bold text-3xl mb-1">5+</h3>
-              <p className="text-soft-white/70">Years Experience</p>
-            </div>
-            <div className="text-center">
-              <h3 className="text-accent font-bold text-3xl mb-1">20+</h3>
-              <p className="text-soft-white/70">Projects Completed</p>
-            </div>
-            <div className="text-center">
-              <h3 className="text-accent font-bold text-3xl mb-1">10+</h3>
-              <p className="text-soft-white/70">Satisfied Clients</p>
-            </div>
+        </div>
+        
+        <div className="mt-20 flex flex-wrap gap-8 justify-center animate-slide-up">
+          <div className="text-center">
+            <h3 className="text-accent font-bold text-3xl mb-1">5+</h3>
+            <p className="text-soft-white/70">Years Experience</p>
+          </div>
+          <div className="text-center">
+            <h3 className="text-accent font-bold text-3xl mb-1">20+</h3>
+            <p className="text-soft-white/70">Projects Completed</p>
+          </div>
+          <div className="text-center">
+            <h3 className="text-accent font-bold text-3xl mb-1">10+</h3>
+            <p className="text-soft-white/70">Satisfied Clients</p>
           </div>
         </div>
       </div>

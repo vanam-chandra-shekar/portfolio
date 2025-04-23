@@ -54,6 +54,29 @@ const Certificates: React.FC = () => {
                   </div>
                 </div>
                 
+                {/* Certificate Image */}
+                <div className={`w-full md:w-1/2 ${
+                  index % 2 === 0 ? 'md:text-left' : 'md:text-right'
+                }`}>
+                  <div 
+                    className={`rounded-lg overflow-hidden ${
+                      index % 2 === 0 ? 'md:mr-auto' : 'md:ml-auto'
+                    } md:max-w-lg shadow-lg shadow-primary/20 group`}
+                  >
+                    <div className="relative h-48 overflow-hidden">
+                      <img 
+                        src={certificate.image} 
+                        alt={certificate.name} 
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+                      <div className="absolute bottom-4 left-4 right-4">
+                        <p className="text-soft-white font-medium">{certificate.name}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
                 {/* Timeline dot */}
                 <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-5 h-5 rounded-full bg-highlight border-4 border-background"></div>
               </div>

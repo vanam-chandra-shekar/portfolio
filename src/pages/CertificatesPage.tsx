@@ -13,33 +13,46 @@ const CertificatesPage: React.FC = () => {
           {certificates.map((certificate) => (
             <div 
               key={certificate.id}
-              className="bg-primary/20 backdrop-blur-sm rounded-lg p-6 hover:shadow-lg transition-all group"
+              className="bg-primary/20 backdrop-blur-sm rounded-lg overflow-hidden hover:shadow-lg transition-all group"
             >
-              <div className="rounded-full bg-highlight/20 p-3 w-12 h-12 flex items-center justify-center mb-4">
-                <Medal className="text-accent group-hover:text-highlight transition-colors" size={24} />
+              {/* Certificate Image */}
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={certificate.image} 
+                  alt={certificate.name} 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-60"></div>
+                <div className="absolute top-4 left-4">
+                  <div className="rounded-full bg-highlight/30 p-2 backdrop-blur-sm">
+                    <Medal className="text-accent" size={20} />
+                  </div>
+                </div>
               </div>
               
-              <h3 className="text-xl font-bold text-soft-white mb-2">{certificate.name}</h3>
-              <p className="text-highlight mb-1">{certificate.issuer}</p>
-              <p className="text-soft-white/70 text-sm mb-4">{certificate.date}</p>
-              
-              {certificate.credentialId && (
-                <p className="text-soft-white/70 text-sm mb-4">
-                  Credential ID: {certificate.credentialId}
-                </p>
-              )}
-              
-              {certificate.url && (
-                <a
-                  href={certificate.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 text-accent hover:text-highlight transition-colors"
-                >
-                  View Certificate
-                  <ExternalLink size={16} />
-                </a>
-              )}
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-soft-white mb-2">{certificate.name}</h3>
+                <p className="text-highlight mb-1">{certificate.issuer}</p>
+                <p className="text-soft-white/70 text-sm mb-4">{certificate.date}</p>
+                
+                {certificate.credentialId && (
+                  <p className="text-soft-white/70 text-sm mb-4">
+                    Credential ID: {certificate.credentialId}
+                  </p>
+                )}
+                
+                {certificate.url && (
+                  <a
+                    href={certificate.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-accent hover:text-highlight transition-colors"
+                  >
+                    View Certificate
+                    <ExternalLink size={16} />
+                  </a>
+                )}
+              </div>
             </div>
           ))}
         </div>

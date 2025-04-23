@@ -46,7 +46,8 @@ export const certificates: Certificate[] = [
     issuer: "Amazon Web Services",
     date: "June 2023",
     credentialId: "AWS-12345",
-    url: "https://aws.amazon.com/certification/"
+    url: "https://aws.amazon.com/certification/",
+    image: "https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     id: 2,
@@ -54,7 +55,8 @@ export const certificates: Certificate[] = [
     issuer: "Udacity",
     date: "March 2023",
     credentialId: "UD-67890",
-    url: "https://www.udacity.com/"
+    url: "https://www.udacity.com/",
+    image: "https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     id: 3,
@@ -62,7 +64,8 @@ export const certificates: Certificate[] = [
     issuer: "Coursera",
     date: "December 2022",
     credentialId: "CS-13579",
-    url: "https://www.coursera.org/"
+    url: "https://www.coursera.org/",
+    image: "https://images.pexels.com/photos/4974920/pexels-photo-4974920.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     id: 4,
@@ -70,7 +73,8 @@ export const certificates: Certificate[] = [
     issuer: "DataCamp",
     date: "October 2022",
     credentialId: "DC-24680",
-    url: "https://www.datacamp.com/"
+    url: "https://www.datacamp.com/",
+    image: "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   }
 ];
 
@@ -79,25 +83,29 @@ export const achievements: Achievement[] = [
     id: 1,
     title: "Hackathon Winner",
     description: "First place at the International Developers Hackathon for creating an innovative healthcare solution.",
-    date: "May 2023"
+    date: "May 2023",
+    image: "https://images.pexels.com/photos/7103/writing-notes-idea-conference.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     id: 2,
     title: "Open Source Contributor",
     description: "Significant contributions to several open-source projects, with over 500 commits and 20 pull requests merged.",
-    date: "2022 - Present"
+    date: "2022 - Present",
+    image: "https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     id: 3,
     title: "Tech Conference Speaker",
     description: "Presented on 'Modern Frontend Architecture' at the Web Development Summit.",
-    date: "November 2022"
+    date: "November 2022",
+    image: "https://images.pexels.com/photos/2774556/pexels-photo-2774556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   },
   {
     id: 4,
     title: "Published Article",
     description: "Featured article in Tech Magazine about best practices in progressive web applications.",
-    date: "August 2022"
+    date: "August 2022",
+    image: "https://images.pexels.com/photos/261763/pexels-photo-261763.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   }
 ];
 
@@ -133,6 +141,7 @@ export const aboutMe = {
   title: "Full Stack Developer",
   introduction: "I'm a passionate full-stack developer specializing in building exceptional digital experiences. With a focus on creating responsive, user-friendly applications, I strive to write clean, efficient code and continuously improve my skills.",
   details: "With over 5 years of experience in web development, I've worked on a variety of projects from e-commerce platforms to data visualization dashboards. I'm proficient in modern JavaScript frameworks like React and Vue, as well as backend technologies including Node.js and Python. I enjoy solving complex problems and learning new technologies.",
+  profileImage: "https://images.pexels.com/photos/5792641/pexels-photo-5792641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   skills: [
     "JavaScript/TypeScript", 
     "React/Next.js", 

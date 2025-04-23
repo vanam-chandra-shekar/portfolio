@@ -13,18 +13,30 @@ const Achievements: React.FC = () => {
           {achievements.map((achievement, index) => (
             <div 
               key={achievement.id}
-              className="bg-primary/20 backdrop-blur-sm rounded-lg p-6 hover:shadow-lg transition-all group"
+              className="bg-primary/20 backdrop-blur-sm rounded-lg overflow-hidden hover:shadow-lg transition-all group"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="flex items-start gap-4">
-                <div className="rounded-full bg-highlight/20 p-3 text-accent group-hover:text-highlight transition-colors">
-                  <Trophy size={24} />
-                </div>
-                
-                <div>
-                  <h3 className="text-xl font-bold text-soft-white mb-2">{achievement.title}</h3>
-                  <p className="text-soft-white/80 mb-3">{achievement.description}</p>
-                  <span className="text-highlight text-sm">{achievement.date}</span>
+              {/* Achievement Image */}
+              <div className="relative h-48 overflow-hidden">
+                <img 
+                  src={achievement.image} 
+                  alt={achievement.title} 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background to-transparent opacity-70"></div>
+              </div>
+              
+              <div className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="rounded-full bg-highlight/20 p-3 text-accent group-hover:text-highlight transition-colors flex-shrink-0">
+                    <Trophy size={24} />
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-bold text-soft-white mb-2">{achievement.title}</h3>
+                    <p className="text-soft-white/80 mb-3">{achievement.description}</p>
+                    <span className="text-highlight text-sm">{achievement.date}</span>
+                  </div>
                 </div>
               </div>
             </div>

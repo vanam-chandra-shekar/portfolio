@@ -15,6 +15,7 @@ export interface Certificate {
   date: string;
   credentialId?: string;
   url?: string;
+  image?: string; // Added image field
 }
 
 export interface Achievement {
@@ -22,6 +23,7 @@ export interface Achievement {
   title: string;
   description: string;
   date: string;
+  image?: string; // Added image field
 }
 
 export interface SocialLink {
