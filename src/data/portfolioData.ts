@@ -32,7 +32,7 @@ export const projects: Project[] = [
     id: 4,
     title: "Mlpkg",
     description: "Created a Python machine learning library from scratch, named mlpkg, featuring a custom automatic differentiation engine for constructing and visualizing computational graphs. The project highlights expertise in Python programming and foundational machine learning principles, emphasizing the development of reusable and efficient code for gradient-based optimization tasks.",
-    image: "/assets/achivements/mlpkg.png",
+    image: "/assets/projects/mlpkg.png",
     technologies: ["Python", "Machine Learning", "NumPy", "Auto Diff", "Matplotlib"],
     liveUrl: "https://github.com/vanam-chandra-shekar/MLpkg.git",
     githubUrl: "https://github.com/vanam-chandra-shekar/MLpkg.git"
